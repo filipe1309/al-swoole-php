@@ -37,7 +37,7 @@ cd al-swoole-php
 docker-compose up
 ```
 
-> Access http://localhost:8000
+> Access http://localhost:8080
 
 <!-- ## :white_check_mark: Tests
 
