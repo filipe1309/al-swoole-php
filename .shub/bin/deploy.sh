@@ -35,7 +35,7 @@ echo "---------------------------------------------"
 TAG_MSG=$2
 GIT_BRANCH=$(git branch --show-current)
 GIT_DEFAULT_BRANCH=$(git remote show origin | grep 'HEAD' | cut -d':' -f2 | sed -e 's/^ *//g' -e 's/ *$//g')
-[ ${GIT_DEFAULT_BRANCH} == *"(unknown)"* ] && echo "unk" && GIT_DEFAULT_BRANCH="main"
+[ $GIT_DEFAULT_BRANCH = "(unknown)" ] && GIT_DEFAULT_BRANCH="main"
 TAG_NAME=$GIT_BRANCH
 FAILED_MSG="ERROR (Delete last tag if it was created)"
 NEWEST_TAG=$(git describe --abbrev=0 --tags)
