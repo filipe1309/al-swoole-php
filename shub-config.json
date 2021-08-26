@@ -1,0 +1,14 @@
+{
+    "version": "0.18.3",
+    "project": {
+        "name": "PHP Swoole",
+        "link": "https://github.com/filipe1309/al-swoole-php.git"
+    },
+    "course": {
+        "name": "Swoole PHP: Servidor assíncrono e corrotinas com PHP",
+        "link": "https://cursos.alura.com.br/course/swoole-php-servidor-assincrono-corrotinas-php",
+        "type": "class",
+        "multiple": false
+    },
+    "vcs": "true"
+}
