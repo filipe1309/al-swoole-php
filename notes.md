@@ -22,3 +22,9 @@ php http-server.php
 ```
 
 https://www.swoole.co.uk/docs/modules/swoole-http-server-doc
+
+## CLASS-2
+
+```sh
+time php coroutines.php
+```
