@@ -28,3 +28,7 @@ https://www.swoole.co.uk/docs/modules/swoole-http-server-doc
 ```sh
 time php coroutines.php
 ```
+
+```sh
+docker exec -it 5d87b75a9b07 php -S localhost:8001
+```
