@@ -147,11 +147,8 @@ if [[ $response =~ ^(yes|y| ) ]] || [[ -z $response ]]; then
         fi
     fi
 else
-    rm .shub/bin/init.sh
-    rm .shub/bin/shub-logo.sh
-    rm .shub/bin/deploy.sh
-    rm .shub/bin/self-update.sh
-    rm .shub/bin/links.txt
+    rm -rf .shub/bin
 fi
 
+echo "---------------------------------------------"
 echo -e "\xE2\x9C\x94 CONFIGURATION COMPLETED"
