@@ -36,7 +36,7 @@ docker exec -it 5d87b75a9b07 php -S localhost:8001
 ## CLASS-3
 
 ```sh
-docker run -itv $(pwd):/app -w /app -p 8080:8080 php-swoole php http-server.php
+docker run --rm -itv $(pwd):/app -w /app -p 8080:8080 php-swoole php http-server.php
 ```
 
 https://www.swoole.co.uk/docs/modules/swoole-runtime-flags

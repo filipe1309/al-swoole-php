@@ -15,10 +15,16 @@ $server->on('request', function (Request $request, Response $response) {
 
     $channel = new chan(2);
     go(function () use ($channel) {
-        $client = new Client('localhost', 8001);
-        $client->get('/server.php');
+        // Curl with intercept swoole hook in a couroutine
+        $curl = curl_init('http://localhost:8001/server.php');
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
-        $content = $client->getBody();
+        // Native Coroutine
+        // $client = new Client('localhost', 8001);
+        // $client->get('/server.php');
+        // $content = $client->getBody();
+
+        $content = curl_exec($curl);
         $channel->push($content);
     });
 
