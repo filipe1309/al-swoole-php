@@ -3,6 +3,8 @@
 use Swoole\Http\{Request, Response, Server};
 use Swoole\Coroutine\Http\Client;
 
+Co::set(['hook_flags' => SWOOLE_HOOK_ALL]);
+
 $server = new Server('0.0.0.0', 8080);
 
 // http://localhost:8080/

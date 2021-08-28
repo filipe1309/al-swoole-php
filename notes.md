@@ -5,7 +5,7 @@
 <!-- https://gitignore.io -->
 <!-- https://github.com/github/gitignore -->
 
-## Class-1
+## CLASS-1
 
 ```sh
 docker build -t php-swoole .
@@ -32,3 +32,11 @@ time php coroutines.php
 ```sh
 docker exec -it 5d87b75a9b07 php -S localhost:8001
 ```
+
+## CLASS-3
+
+```sh
+docker run -itv $(pwd):/app -w /app -p 8080:8080 php-swoole php http-server.php
+```
+
+https://www.swoole.co.uk/docs/modules/swoole-runtime-flags
