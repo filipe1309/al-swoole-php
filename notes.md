@@ -54,3 +54,24 @@ php -S localhost:8080 -t public
 ```
 
 http://localhost:8080/listar-cursos
+
+```sh
+docker run --rm -itv $(pwd):/app -w /app -p 8080:8080 php-swoole php mvc/public/swoole.php
+
+docker run --rm -itv $(pwd):/app -w /app -p 8080:8080 php-swoole bash
+php mvc/public/swoole.php
+```
+
+https://github.com/chubbyphp/chubbyphp-swoole-request-handler
+
+https://github.com/phpearth/swoole-engine/blob/master/docs/sessions.md
+
+https://www.php.net/manual/en/features.session.security.management.php
+
+https://github.com/psr7-sessions/storageless#what-is-the-problem-with-extsession
+
+### Swoole Table
+
+https://www.swoole.co.uk/docs/modules/swoole-table
+
+https://www.swoole.co.uk/docs/modules/swoole-table-example
