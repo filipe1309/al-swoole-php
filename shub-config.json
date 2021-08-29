@@ -1,14 +1,13 @@
 {
     "version": "0.18.3",
-    "project": {
-        "name": "PHP Swoole",
-        "link": "https://github.com/filipe1309/al-swoole-php.git"
-    },
-    "course": {
-        "name": "Swoole PHP: Servidor assíncrono e corrotinas com PHP",
-        "link": "https://cursos.alura.com.br/course/swoole-php-servidor-assincrono-corrotinas-php",
-        "type": "class",
-        "multiple": false
-    },
+    "username": "Filipe Leuch Bonfim",
+    "github_username": "filipe1309",
+    "project_name": "PHP Swoole",
+    "project_repo_name": "al-swoole-php",
+    "project_repo_link": "https://github.com/filipe1309/al-swoole-php.git",
+    "course_name": "Swoole PHP: Servidor assíncrono e corrotinas com PHP",
+    "course_link": "https://cursos.alura.com.br/course/swoole-php-servidor-assincrono-corrotinas-php",
+    "course_type": "class",
+    "course_multiple": "false",
     "vcs": "true"
 }
