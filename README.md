@@ -33,10 +33,22 @@ cd al-swoole-php
 
 ## :runner: Running
 
+### Simple Swoole Server
+
 ```sh
 docker-compose up
+```
 
+```sh
 docker exec -ti $(docker ps -qf "name=server") php -S localhost:8001
+```
+
+> Access http://localhost:8080
+
+### MVC App migrate to Swoole
+
+```sh
+docker run --rm -itv $(pwd):/app -w /app -p 8080:8080 php-swoole php mvc/public/swoole.php
 ```
 
 > Access http://localhost:8080
