@@ -35,6 +35,8 @@ cd al-swoole-php
 
 ```sh
 docker-compose up
+
+docker exec -ti $(docker ps -qf "name=server") php -S localhost:8001
 ```
 
 > Access http://localhost:8080
