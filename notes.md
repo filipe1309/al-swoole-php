@@ -75,3 +75,11 @@ https://github.com/psr7-sessions/storageless#what-is-the-problem-with-extsession
 https://www.swoole.co.uk/docs/modules/swoole-table
 
 https://www.swoole.co.uk/docs/modules/swoole-table-example
+
+## CLASS-5
+
+https://docs.mezzio.dev/mezzio-swoole/v2/intro/
+
+https://www.swoole.co.uk/article/symfony-swoole
+
+https://laravel.com/docs/8.x/octane
